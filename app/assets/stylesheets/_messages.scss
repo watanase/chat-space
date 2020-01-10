@@ -36,16 +36,20 @@
     height: calc(100vh - 100px);
     padding: 20px 20px;
     .group{
+      a{
+        text-decoration: none;
+      }
       color: white;
-      text-decoration: none;
       margin-bottom: 40px;
       &__group-name{
         margin-bottom: 5px;
-        font-size: 15px;  
+        font-size: 15px;
+        color: white;
         }
       &__latest-message
         {
         font-size: 11px;
+        color: white;
       }
     }
   }
