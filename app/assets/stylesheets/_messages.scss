@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-$sky-color: #38aef0;
 
 .wrapper{
 }
@@ -83,13 +82,13 @@ $sky-color: #38aef0;
     &__edit-btn{
       margin-top: 30px;
       height: 40px;
-      color: $sky-color;
+      color: $light_blue;
       padding: 0 20px;
       font-size: 16px;
       line-height: 40px;
       position: absolute;
       right: 40px;
-      border: 1px solid $sky-color;
+      border: 1px solid $light_blue;
     }
   }
   .message{
@@ -148,7 +147,7 @@ $sky-color: #38aef0;
         margin-left: 15px;
         width: 100px;
         height: 50px;
-        background-color: $sky-color;
+        background-color: $light_blue;
         color: white;
         padding: 0 30px;
       }
