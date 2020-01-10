@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+$sky-color: #38aef0;
+
+.wrapper{
+}
+
+.side-bar{
+  background-color:#253141;
+  width: 300px;
+  height: 100vh;
+  float: left;
+  .side-header{
+    height: 100px;
+    align-items: center;
+    display: flex;
+    padding: 0 20px;
+    &__box{
+      font-weight: bold;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      &__menu{
+        display: flex;
+        a{
+          color: white;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .groups{
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    padding: 20px 20px;
+    .group{
+      color: white;
+      text-decoration: none;
+      margin-bottom: 40px;
+      &__group-name{
+        margin-bottom: 5px;
+        font-size: 15px;  
+        }
+      &__latest-message
+        {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+
+.main-chat{
+  width: calc(100vw - 300px);
+  float: right;
+  .main-header{
+    height: 100px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    &__left-box{
+      padding-top: 35px;
+      &__current-group{
+        color: #333333;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      ul{
+        font-size: 12px;
+        color: #999999;
+        display: flex;
+        li{
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+    &__edit-btn{
+      margin-top: 30px;
+      height: 40px;
+      color: $sky-color;
+      padding: 0 20px;
+      font-size: 16px;
+      line-height: 40px;
+      position: absolute;
+      right: 40px;
+      border: 1px solid $sky-color;
+    }
+  }
+  .message{
+    background-color: #fafafa;
+    height: calc(100vh - 190px);
+    padding: 35px 0 0 40px;
+    .message{
+      &__upper-info{
+        display: flex;
+        margin-bottom: 12px;
+        &__user{
+          font-size: 16px;
+          color: #333333;
+        }
+        &__date{
+          font-size: 12px;
+          color: #999999;
+          margin-left: 10px;
+        }
+      }
+      &__text{
+        font-size: 14px;
+        color: #434A54;
+        margin-bottom: 46px;
+      }
+    }
+  }
+  .form{
+    background-color: #d2d2d2;
+    height: 90px;
+    padding: 20px 40px;
+    .text-form{
+      display: flex;
+      line-height: 50px;
+      .form-box{
+        position: relative;
+        width: 100%;
+        background-color: white;
+        height: 50px;
+        &__text{
+          padding-left: 10px;
+          line-height: 50px;
+          border-style: none;
+          width: 100%;
+        }
+        &__image{
+          position: absolute;
+          right: 10px;
+          cursor: pointer;
+          &__file{
+            display: none;
+          }
+        }
+      }
+      .form-btn{
+        margin-left: 15px;
+        width: 100px;
+        height: 50px;
+        background-color: $sky-color;
+        color: white;
+        padding: 0 30px;
+      }
+    }
+  }
+}
